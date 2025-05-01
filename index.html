@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Evento
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="shortcut icon" href="Images/online-event-registration.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+    <header class="border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between h-16 relative">
+            <div class="flex items-center space-x-2">
+                <!-- <img alt="Eventologo with blue and red shapes" class="w-6 h-6" height="24"
+                    src="#"
+                    width="24" /> -->
+                <span class="font-semibold text-2xl tracking-tight">
+                    <a href="index.html">
+                        Evento
+                    </a>
+                </span>
+            </div>
+            <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none" id="menu-button"
+                type="button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-8 text-sm font-normal">
+                <li class="relative group cursor-pointer">
+                    <a href="index.html">
+                        Home</a>
+                </li>
+                <li class="relative group cursor-pointer">
+                    Events
+                </li>
+                <li class="relative group cursor-pointer">
+                    <a href="#how-to-register">How it works</a>
+                </li>
+                <li class="relative group cursor-pointer">
+                    About Us
+                </li>
+                <li class="cursor-pointer">
+                    Leaderboard
+                </li>
+                <li class="cursor-pointer">
+                    <a href="#contact-us"> Contact Us</a>
+                </li>
+            </ul>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-normal">
+                <button class="cursor-pointer">
+                    Log in
+                </button>
+                <button
+                    class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 transition">
+                    Sign up
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-md md:hidden hidden"
+                id="mobile-menu">
+                <ul class="flex flex-col space-y-4 p-6 text-base font-normal">
+                    <li class="flex items-center justify-between cursor-pointer">
+                        Home
+                    </li>
+                    <li class="flex items-center justify-between cursor-pointer">
+                        Events
+                    </li>
+                    <li class="flex items-center justify-between cursor-pointer">
+                        <a href="#how-to-register">How it works</a>
+                    </li>
+                    <li class="flex items-center justify-between cursor-pointer">
+                        About Us
+                    </li>
+                    <li class="cursor-pointer">
+                        Leaderboard
+                    </li>
+                    <li class="cursor-pointer">
+                        <a href="#contact-us"> Contact Us</a>
+                    </li>
+                    <li>
+                        <button class="w-full text-left cursor-pointer">
+                            Log in
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            class="w-full bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 transition">
+                            Sign up
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- 1st Section Start -->
+    <main class="mx-auto px-6 sm:px-8 lg:px-12 mt-20 flex flex-col md:flex-row items-center justify-between gap-10">
+        <section class="max-w-xl text-left">
+            <h1 class="text-4xl font-semibold leading-tight mb-4">
+                QuizVerse: Register Now
+                <br />
+                for the Ultimate Quiz Showdown!
+            </h1>
+            <p class="text-lg font-normal text-gray-700 mb-8">
+                Unlock your potential and join the excitement! QuizVerse brings you a competitive platform to test
+                your
+                knowledge, compete with the brightest minds, and win exciting prizes.
+            </p>
+            <button onclick="location.href='form.html'"
+                class="bg-gray-900 text-white font-semibold rounded-full px-8 py-3 text-sm hover:bg-gray-800 transition">
+                Register Now
+            </button>
+        </section>
+        <section class="relative flex items-center justify-center w-full max-w-3xl">
+            <a href="form.html">
+                <img alt="A person holding a phone with a quiz on it" class="w-full h-100  rounded-lg"
+                    src="Images/first-banner.png" /></a>
+            <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white opacity-50"> -->
+            </div>
+        </section>
+    </main>
+    <!-- 1st Section Close -->
+    <!-- 2nd Section Start -->
+    <main class="mx-auto px-6 sm:px-8 lg:px-12 mt-20 flex flex-col md:flex-row items-center justify-between gap-10">
+        <section class="max-w-xl text-left">
+            <h1 class="text-4xl font-semibold leading-tight mb-4">
+                Hackathon: Register Now
+                <br />
+                for the Ultimate Coding Showdown!
+            </h1>
+            <p class="text-lg font-normal text-gray-700 mb-8">
+                Join the Hackathon and unleash your creativity! Collaborate with like-minded individuals, innovate,
+                and
+                showcase your skills in a thrilling coding competition.
+            </p>
+            <button onclick="location.href='form.html'"
+                class="bg-gray-900 text-white font-semibold rounded-full px-8 py-3 text-sm hover:bg-gray-800 transition">
+                Register Now
+            </button>
+        </section>
+        <section class="relative flex items-center justify-center w-full max-w-3xl">
+            <!-- <a href="index.html"> -->
+                <img alt="A person holding a phone with a quiz on it" class="w-full h-100  rounded-lg"
+                    src="Images/hack.jpeg" />
+                <!-- </a> -->
+            <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white opacity-50"> -->
+            </div>
+        </section>
+    </main>
+    <!-- 2nd Section Close -->
+    <!-- 3rd Section Start -->
+    <main class="mx-auto px-6 sm:px-8 lg:px-12 mt-20 flex flex-col md:flex-row items-center justify-between gap-10 ">
+        <section class="max-w-xl text-left">
+            <h1 class="text-4xl font-semibold leading-tight mb-4">
+                CodeClash: Register Now
+                <br />
+                for the Ultimate Coding Showdown!
+            </h1>
+            <p class="text-lg font-normal text-gray-700 mb-8">
+                Step into the arena where logic meets creativity! CodeClash is your chance to prove your coding prowess,
+                tackle real-world challenges, and compete with top talent.
+            </p>
+            <button onclick="location.href='form.html'"
+                class="bg-gray-900 text-white font-semibold rounded-full px-8 py-3 text-sm hover:bg-gray-800 transition">
+                Register Now
+            </button>
+        </section>
+        <section class="relative flex items-center justify-center w-full max-w-3xl">
+            <!-- <a href="index.html"> -->
+                <img alt="A person holding a phone with a quiz on it" class="w-full h-96 object-contain rounded-lg"
+                    src="Images/code-clash.jpg" />
+                 <!-- </a> -->
+            <!-- <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white opacity-50"> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 3rd Section Close -->
+    <!-- How to Register Steps -->
+    <section class="mt-12 w-full min-h-[200px] mt-20 text-center bg-white" id="how-to-register">
+        <h2 class="text-3xl font-semibold mb-8">
+            How to Register
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Step 1</h3>
+                <p class="text-gray-700">Visit our website and choose your event.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Step 2</h3>
+                <p class="text-gray-700">Fill out the registration form with your details.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Step 3</h3>
+                <p class="text-gray-700">Submit your registration and get ready for the event!</p>
+            </div>
+        </div>
+    </section>
+    <!-- How to Register Steps Close -->
+
+    <!-- Sixth Section Start -->
+    <section class="bg-white py-15 px-6 font-sans">
+        <div class="bg-white max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-center text-2xl font-semibold text-gray-900 mb-12">
+                Key Metrics: A Decade of Success in Numbers
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="bg-[#1c2028] rounded-lg flex flex-col items-center py-8 relative">
+                    <i class="fas fa-calendar-alt text-white text-3xl mb-6"></i>
+                    <span class="text-white text-4xl font-light mb-2 count-up" data-target="250">0</span>
+                    <span class="text-gray-300 text-sm">250 Challenges Solved</span>
+                    <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0d6efd] rounded-b-lg"></div>
+                </div>
+                <div class="bg-[#1c2028] rounded-lg flex flex-col items-center py-8 relative">
+                    <i class="fas fa-building text-white text-3xl mb-6"></i>
+                    <span class="text-white text-4xl font-light mb-2 count-up" data-target="2345">0</span>
+                    <span class="text-gray-300 text-sm">Event Registrations</span>
+                    <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0d6efd] rounded-b-lg"></div>
+                </div>
+                <div class="bg-[#1c2028] rounded-lg flex flex-col items-center py-8 relative">
+                    <i class="fas fa-smile text-white text-3xl mb-6"></i>
+                    <span class="text-white text-4xl font-light mb-2 count-up" data-target="40000">0</span>
+                    <span class="text-gray-300 text-sm">Happy Participants</span>
+                    <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0d6efd] rounded-b-lg"></div>
+                </div>
+                <div class="bg-[#1c2028] rounded-lg flex flex-col items-center py-8 relative">
+                    <i class="fas fa-chart-area text-white text-3xl mb-6"></i>
+                    <span class="text-white text-4xl font-light mb-2 count-up" data-target="30">0</span>
+                    <span class="text-gray-300 text-sm">Competitions Conducted</span>
+                    <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#0d6efd] rounded-b-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const counters = document.querySelectorAll('.count-up');
+
+        const animateCount = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 4000;
+            const increment = target / (duration / 16);
+
+            let count = 0;
+
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+
+            updateCount();
+        };
+
+        const options = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    </script>
+
+
+    <!-- Sixth Section Close-->
+    <!-- Message Section Start -->
+
+    <section
+        class=" w-full min-h-[200px] flex flex-col items-center justify-center text-center px-4 py-16 bg-[#1c2028] text-white"
+        id="contact-us">
+
+        <h1 class="text-gray-300 text-sm font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight mb-4 uppercase">
+            SEND US A MESSAGE
+        </h1>
+        <p class="text-gray-300 text-sm max-w-3xl text-base sm:text-lg md:text-xl mb-8">
+            We value your thoughts and feedback. Whether you have a question, suggestion, or just want to say hello,
+            feel free to send us a message. 
+        </p>
+        <button onclick="location.href='index.html'"
+            class="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-normal px-6 py-3 rounded-md transition-colors">
+            CONTACT US
+        </button>
+    </section>
+
+    <!-- Message Section Close-->
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Footer Start -->
+    <footer class="bg-gray-100 py-6">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+            <p class="text-sm text-gray-600">
+                &copy; 2025 Evento. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
