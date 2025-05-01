@@ -5,8 +5,8 @@
 
 ## 🌐 Live Preview
 
-*(If deployed, add your Netlify or hosting link here)*  
-[Visit Evento Live](#)
+
+https://eventos.kesug.com/
 
 ---
 
